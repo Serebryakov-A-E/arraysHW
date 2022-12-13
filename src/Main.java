@@ -4,12 +4,24 @@ public class Main {
     public static void main(String[] args) {
         int[] randomArray = generateRandomArray();
 
+        //task 1
         System.out.printf("Сумма трат за месяц составила %,d рублей\n", findSum(randomArray));
 
+        //task2
         int[] minMax = findMinAndMax(randomArray);
         System.out.printf("Минимальная сумма трат за день составила %,d рублей. Максимальная сумма трат за день составила %,d рублей\n", minMax[0], minMax[1]);
 
-        System.out.printf("Средняя сумма трат за месяц составила %,.2f рублей", findAverage(randomArray));
+        //task3
+        System.out.printf("Средняя сумма трат за месяц составила %,.2f рублей\n", findAverage(randomArray));
+        
+        //task 4
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
+        
+        
+        
     }
 
     static int findSum(int[] array) {
